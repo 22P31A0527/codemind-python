@@ -1,1 +1,3 @@
-print(input().lower())
+n=input()
+s=n.lower()
+print(s)
