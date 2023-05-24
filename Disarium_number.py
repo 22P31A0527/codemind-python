@@ -1,15 +1,16 @@
-import math
-q=int(input())
-n=q
-s=0
-j=str(q)
-i=len(j)
+n=int(input())
+k=n
+c=s=0
 while n!=0:
-    r=n%10
-    s=s+pow(r,i)
-    i-=1
+    c+=1
     n=n//10
-if s==q:
+n=k
+while n>0:
+    r=n%10
+    s=s+r**c
+    n=n//10
+    c=c-1
+if s==k:
     print(True)
 else:
     print(False)
