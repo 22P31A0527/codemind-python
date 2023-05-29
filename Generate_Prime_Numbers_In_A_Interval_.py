@@ -6,6 +6,5 @@ def fun(n):
 a=int(input())
 b=int(input())
 for i in range(a+1,b):
-    x=fun(i)
-    if x==1:
+    if fun(i)==1:
         print(i)
