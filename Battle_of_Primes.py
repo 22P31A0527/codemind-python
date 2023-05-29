@@ -5,8 +5,8 @@ def fun(n):
     return 1
 n1=int(input())
 n2=int(input())
-n12=n1+n2
-for i in range(1,n12):
-    if fun(n12+i)==1:
+t=n1+n2
+for i in range(1,t):
+    if fun(t+i)==1:
         print(i)
         break
