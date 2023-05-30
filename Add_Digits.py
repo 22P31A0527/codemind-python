@@ -1,12 +1,9 @@
-def fun(num):
-    s=0
-    while(num!=0):
-       r=num%10
-       s=s+r
-       num=num//10
-    if s>9:
-        s=fun(s)
-    return s
 n=int(input())
-x=fun(n)
-print(x)
+while n>9:
+    s=0
+    while n!=0:
+        r=n%10
+        s=s+r
+        n=n//10
+    n=s
+print(n)
