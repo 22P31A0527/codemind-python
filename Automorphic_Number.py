@@ -1,15 +1,15 @@
-n=int(input())
-m=n*n
-c=1
-while(n!=0):
-    r1=n%10
-    r2=m%10
+n1=int(input())
+n2=n1*n1
+s=1
+while n1!=0:
+    r1=n1%10
+    r2=n2%10
     if r1!=r2:
-        c=0
+        s=0
         break
-    n=n//10
-    m=m//10
-if c==0:
-    print('Not an Automorphic Number')
-else:
+    n1=n1//10
+    n2=n2//10
+if s==1:
     print('Automorphic Number')
+else:
+    print('Not an Automorphic Number')
