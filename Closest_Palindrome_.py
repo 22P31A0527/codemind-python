@@ -7,20 +7,20 @@ def fun(n):
         q=q//10
     if s==n:
         return 1
-    return 0
+    else:
+        return 0
 n=int(input())
 for i in range(n+1,2*n+1):
     if fun(i)==1:
-        x=i
+        a=i
         break
 for i in range(n-1,0,-1):
     if fun(i)==1:
-        y=i
+        b=i
         break
-if abs(n-x)==abs(n-y):
-    print(y,x)
-elif abs(n-x)<abs(n-y):
-    print(x)
+if abs(n-a)==abs(n-b):
+    print(b,a)
+elif abs(n-a)<abs(n-b):
+    print(a)
 else:
-    print(y)
-        
+    print(b)
