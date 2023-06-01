@@ -1,14 +1,7 @@
-n=int(input())
-q=str(n)
-c=1
-while n!=0:
-    r=n%10
-    x=q.count(str(r))
-    if x!=1:
-        c=0
+n=input()
+for i in range(0,len(n)):
+    if n.count(n[i])!=1:
+        print('Not Unique Number')
         break
-    n=n//10
-if c==0:
-    print("Not Unique Number")
 else:
-    print("Unique Number")
+    print('Unique Number')
