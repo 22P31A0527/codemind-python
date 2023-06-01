@@ -3,17 +3,17 @@ def fun(n):
         if n%i==0:return 0
     return 1
 n=int(input())
-for i in range(n,n*2+1):
+for i in range(n,2*n+1):
     if fun(i)==1:
-        x=i
+        a=i
         break
-for i in range(n,1,-1):
+for i in range(n,0,-1):
     if fun(i)==1:
-        y=i
+        b=i
         break
-if abs(n-x)==abs(n-y):
-    print(abs(n-x))
-elif abs(n-x)<abs(n-y):
-    print(abs(n-x))
+if abs(n-a)==abs(n-b):
+    print(abs(n-a))
+elif abs(n-a)<abs(n-b):
+    print(abs(n-a))
 else:
-    print(abs(n-y))
+    print(abs(n-b))
