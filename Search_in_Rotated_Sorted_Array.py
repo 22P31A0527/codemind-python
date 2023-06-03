@@ -1,7 +1,7 @@
 n=int(input())
 a=list(map(int,input().split()))
 k=int(input())
-if k in a:
-    print(a.index(k))
-else:
+if a.count(k)==0:
     print('-1')
+else:
+    print(a.index(k))
