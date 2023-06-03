@@ -1,6 +1,5 @@
 def fun(n):
     q=n
-    s=0
     while q!=0:
         r=q%10
         if r==0:
