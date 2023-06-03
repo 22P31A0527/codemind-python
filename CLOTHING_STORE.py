@@ -1,10 +1,9 @@
 n=int(input())
 a=list(map(int,input().split()))
-b=[]
 c=0
+b=[]
 for i in a:
-    x=a.count(i)
     if i not in b:
         b.append(i)
-        c=c+x//2
+        c=c+(a.count(i)//2)
 print(c)
