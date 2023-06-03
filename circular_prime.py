@@ -10,9 +10,9 @@ while q!=0:
     r=q%10
     s=s*10+r
     q=q//10
-if fun(s)==1 and fun(n)==1:
+if fun(n)==1 and fun(s)==1:
     print('circular prime')
-elif fun(n)==1 and fun(s)==0:
+elif fun(n)==1:
     print('prime but not a circular prime')
 else:
     print('not prime')
