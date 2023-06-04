@@ -6,9 +6,8 @@ for i in a:
     if i not in b:
         if i not in d:
             d.append(i)
-            print(i,end=" ")
 for i in b:
     if i not in a:
         if i not in d:
             d.append(i)
-            print(i,end=" ")
+print(*d)
