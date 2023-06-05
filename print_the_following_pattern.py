@@ -1,6 +1,6 @@
 n=int(input())
 x=ord('A')
-for i in range(x,x+n,1):
-    for j in range(x,n+x,1):
-        print(chr(i),end=" ")
+for i in range(n,0,-1):
+    for j in range(i,0,-1):
+        print(chr(i+x-1),end=" ")
     print()
