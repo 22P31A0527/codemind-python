@@ -14,8 +14,9 @@ def fun1(n):
         return 1
     return 0
 n=int(input())
-for i in range(n+1,10000000):
+i=n+1
+while 1:
     if fun(i)==1 and fun1(i)==1:
         print(i)
         break
-    
+    i+=1
