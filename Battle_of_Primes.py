@@ -3,10 +3,10 @@ def fun(n):
         if n%i==0:
             return 0
     return 1
-n1=int(input())
-n2=int(input())
-t=n1+n2
-for i in range(1,t):
-    if fun(t+i)==1:
+a=int(input())
+b=int(input())
+for i in range(1,a*b):
+    s=a+b+i
+    if fun(s)==1:
         print(i)
         break
