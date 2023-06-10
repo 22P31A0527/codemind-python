@@ -1,8 +1,8 @@
 n=int(input())
-c=0
+k=0
 a=list(map(int,input().split()))
-m=sum(a)//len(a)
+c=sum(a)//len(a)
 for i in range(len(a)):
-    if a[i]<=m:
-        c+=1
-print(c)
+    if a[i]<=c:
+        k+=1
+print(k)
