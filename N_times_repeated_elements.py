@@ -2,14 +2,11 @@ n=int(input())
 a=list(map(int,input().split()))
 m=int(input())
 b=[]
-x=0
-for i in a:
-    if a.count(i)==m:
-        if i not in b:
-            b.append(i)
-            x=1
-if x==1:
-    for i in range(0,len(b)):
-        print(b[i],end=" ")
+for i in range(0,n):
+    if a.count(a[i])==m:
+        if a[i] not in b:
+            b.append(a[i])
+if len(b)>0:
+    print(*b)
 else:
     print('-1')
