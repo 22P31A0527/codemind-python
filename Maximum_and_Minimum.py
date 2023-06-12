@@ -1,14 +1,11 @@
 n=int(input())
 a=list(map(int,input().split()))
 b=[]
-for i in a:
-    c=0
-    for j in a:
-        if i==j:
-            c+=1
-    if c==i and i not in b:
-        b.append(i)
-if b!=[]:
+for i in range(0,n):
+    if a[i]==a.count(a[i]):
+        if a[i] not in b:
+            b.append(a[i])
+if len(b)>0:
     print(min(b),max(b))
 else:
-    print('-1')    
+    print('-1')
