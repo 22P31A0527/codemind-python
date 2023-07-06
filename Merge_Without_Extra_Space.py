@@ -1,12 +1,8 @@
-n=int(input())
-for i in range(1,n+1):
-    p,q=map(int,input().split())
+t=int(input())
+for i in range(1,t+1):
+    n,m=map(int,input().split())
     a=list(map(int,input().split()))
     b=list(map(int,input().split()))
-    c=[]
-    for i in a:
-        c.append(i)
-    for i in b:
-        c.append(i)
+    c=a+b
     c.sort()
     print(*c)
