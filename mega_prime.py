@@ -7,15 +7,17 @@ def prime(n):
                 return 0
         return 1
 n=int(input())
-s=str(n)
-c1=0
+s=0
 if prime(n)==1:
     while n!=0:
         r=n%10
         if prime(r)==1:
-            c1=c1+1
+            s=1
+        else:
+            s=0
+            break
         n=n//10
-if c1!=len(s):
+if s==0:
     print('Not Mega Prime')
 else:
     print('Mega Prime')
